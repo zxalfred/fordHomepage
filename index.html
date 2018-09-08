@@ -8,6 +8,8 @@
   <title>福特官方网站-福特汽车新款车型、精彩呈现</title>
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/flexslider.css">
+  <link rel="stylesheet" href="./css/billboardCarousel.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/nav.css">
 </head>
@@ -196,7 +198,92 @@
 
   <div class="overlay"></div>
 
-  <div class="billboardCarousel"></div>
+  <div class="billboardCarousel">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="billboard-image">
+            <picture>
+              <source srcset="img/banner1.jpg" media="(min-width: 1200px)">
+              <source srcset="img/banner1.jpg" media="(min-width: 992px)">
+              <source srcset="img/banner1.jpg" media="(min-width: 768px)">
+              <source srcset="img/banner1small.jpg" media="(min-width: 480px)">
+              <source srcset="img/banner1small.jpg" media="(min-width: 0px)">
+              <img src="img/banner1.jpg" alt="1">
+            </picture>
+          </div>
+          <div class="billboard-paragraph">
+            <div class="desktop">
+              <h2 class="white"><strong>EcoBoost 芯动力玩咖竞选</strong></h2>
+              <h2 class="white">炫酷开启</h2>
+              <p><button type="button">立即参与</button></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="billboard-image">
+            <picture>
+              <source srcset="img/banner2.jpg" media="(min-width: 1200px)">
+              <source srcset="img/banner2.jpg" media="(min-width: 992px)">
+              <source srcset="img/banner2.jpg" media="(min-width: 768px)">
+              <source srcset="img/banner2small.jpg" media="(min-width: 480px)">
+              <source srcset="img/banner2small.jpg" media="(min-width: 0px)">
+              <img src="img/banner2.jpg" alt="1">
+            </picture>
+          </div>
+          <div class="billboard-paragraph">
+            <div class="desktop">
+              <h2 class="white"><strong>探险趁当夏</strong></h2>
+              <h2 class="white">现购车即享最高15000元置换补贴<br />及2年0利率优惠</h2>
+              <p><button type="button">了解更多</button></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="billboard-image">
+            <picture>
+              <source srcset="img/banner3.jpg" media="(min-width: 1200px)">
+              <source srcset="img/banner3.jpg" media="(min-width: 992px)">
+              <source srcset="img/banner3.jpg" media="(min-width: 768px)">
+              <source srcset="img/banner3small.jpg" media="(min-width: 480px)">
+              <source srcset="img/banner3small.jpg" media="(min-width: 0px)">
+              <img src="img/banner3.jpg" alt="1">
+            </picture>
+          </div>
+          <div class="billboard-paragraph">
+            <div class="desktop">
+              <h2 class="white">撼心之旅 直通阿拉善英雄会</h2>
+              <p><button type="button">了解更多</button></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="billboard-image">
+            <picture>
+              <source srcset="img/banner4.jpg" media="(min-width: 1200px)">
+              <source srcset="img/banner4.jpg" media="(min-width: 992px)">
+              <source srcset="img/banner4.jpg" media="(min-width: 768px)">
+              <source srcset="img/banner4small.jpg" media="(min-width: 480px)">
+              <source srcset="img/banner4small.jpg" media="(min-width: 0px)">
+              <img src="img/banner4.jpg" alt="1">
+            </picture>
+          </div>
+          <div class="billboard-paragraph">
+            <div class="desktop">
+              <h2 class="white"><strong>福特派车主应用</strong></h2>
+              <h2 class="white">智能随行 自在随心</h2>
+              <p><button type="button">即刻体验</button></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="carousel-arrows">
+      <a href="#" class="fa fa-angle-right flex-next"></a>
+      <a href="#" class="fa fa-angle-left flex-prev"></a>
+    </div>
+    <div class="carousel-controls"></div>
+  </div>
 
   <div class="billboard"></div>
 
@@ -211,6 +298,8 @@
   <div class="footer"></div>
 
   <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery.flexslider-min.js"></script>
+  <script src="./js/billboardCarousel.js"></script>
   <script src="./js/nav.js"></script>
 </body>
 

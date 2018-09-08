@@ -142,20 +142,5 @@
   width: 250px;
   height: 54px;
   line-height: 52px;
-  color: white;
-  background: #2d96cd;
-  border: 1px solid transparent;
-  cursor: pointer;
   margin: 25px 10px;
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, .6);
-}
-
-.nav-content .model-button button:hover {
-  background: white;
-  color: #1b394e;
-  border: 1px solid #1b394e;
-}
-
-.nav-content .model-button button:active {
-  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, .4) inset;
 }

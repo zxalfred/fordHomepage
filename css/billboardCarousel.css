@@ -1,0 +1,99 @@
+.billboardCarousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.billboardCarousel .flexslider {
+  border: none;
+  margin: 0;
+}
+
+.billboardCarousel .flexslider .slides>li{
+  position: relative;
+}
+
+.billboardCarousel .carousel-controls .flex-control-nav{
+  bottom: 20px;
+}
+
+.billboardCarousel .carousel-controls .flex-control-nav li {
+  margin: 0 10px;
+}
+
+.billboardCarousel .carousel-controls .flex-control-nav li a {
+  background: #2d96cd;
+  height: 10px;
+  width: 10px;
+}
+
+.billboardCarousel .carousel-controls .flex-control-nav li a:hover {
+  transform: scale(1.25);
+}
+
+.billboardCarousel .carousel-controls .flex-control-nav li a.flex-active {
+  transform: scale(1.25);
+  background: transparent;
+  border: 1px solid #2d96cd;
+}
+
+.billboardCarousel .carousel-arrows {
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  transform: translate(0, -50%);
+  transition: .3s right;
+}
+
+.billboardCarousel:hover .carousel-arrows {
+  right: 0px;
+}
+
+.billboardCarousel .carousel-arrows a{
+  display: block;
+  line-height: 47px;
+  width: 47px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.billboardCarousel .carousel-arrows a.flex-next {
+  background: #2d96cd;
+  color: white;
+  transition: .3s;
+}
+
+.billboardCarousel .carousel-arrows a.flex-next:hover, .billboardCarousel .carousel-arrows a.flex-prev:hover{
+  background: white;
+  color: #2d96cd;
+}
+
+.billboardCarousel .carousel-arrows a.flex-prev {
+  background: rgba(0,0,0.5);
+  color: white;
+}
+
+.billboardCarousel .billboard-paragraph {
+  width: 100%;
+}
+
+.billboardCarousel .billboard-paragraph .desktop {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+.billboardCarousel .billboard-paragraph .desktop h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.billboardCarousel .billboard-paragraph .desktop button {
+  box-sizing: border-box;
+  width: 250px;
+  height: 48px;
+  line-height: 46px;
+  margin-top: 4px;
+  margin-left: 4px;
+  font-size: 18px;
+}

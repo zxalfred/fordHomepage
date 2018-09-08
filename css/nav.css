@@ -1,0 +1,161 @@
+.main-nav {
+  position: relative;
+}
+
+.nav-header {
+  min-height: 70px;
+  padding-left: 77px;
+  padding-right: 40px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+
+.nav-content {
+  z-index: 200;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #fff;
+}
+
+.logoImgLink {
+  display: inline-block;
+  overflow: hidden;
+  width: 192px;
+  height: 37px;
+  background: url(../img/logo.jpg) 0 0 / cover no-repeat;
+}
+
+.nav-wrapper{
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, .8);
+  z-index: 100;
+  display: none;
+}
+
+.nav-header ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.nav-list ul{
+  display: inline-block;
+}
+
+.main-nav-list li {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sec-nav-list li {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.sec-nav-list li i {
+  font-size: 1.3rem;
+  margin-right: 7px;
+}
+
+.nav-content {
+  display: none;
+}
+
+.nav-content .model-type {
+  max-height: 70px;
+  background: #fbfbfb;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px #dbdbdb inset;
+}
+
+.nav-content .model-type ul {
+  max-height: inherit;
+}
+
+.nav-content .model-type ul li{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 18px;
+  max-height: inherit;
+}
+
+.nav-content .model-type ul li.active {
+  border-bottom: 4px solid #1b394e;
+}
+
+.nav-content .model-type ul li a {
+  line-height: 70px;
+  display: block;
+}
+
+.nav-content .model-list {
+  margin: 0 47px;
+  padding: 30px 30px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-content .model-list ul {
+  display: none;
+}
+
+.nav-content .model-list ul.active {
+  display: block;
+}
+
+.nav-content .model-list ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-content .model-list ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-content .model-list ul li a img{
+  display: block;
+  max-width: 164px;
+}
+
+.nav-content .model-list ul li a span {
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.nav-content .model-button {
+  max-height: 203px;
+  text-align: center;
+}
+
+.nav-content .model-button button {
+  box-sizing: border-box;
+  width: 250px;
+  height: 54px;
+  line-height: 52px;
+  color: white;
+  background: #2d96cd;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 25px 10px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, .6);
+}
+
+.nav-content .model-button button:hover {
+  background: white;
+  color: #1b394e;
+  border: 1px solid #1b394e;
+}
+
+.nav-content .model-button button:active {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, .4) inset;
+}

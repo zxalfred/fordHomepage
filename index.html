@@ -10,8 +10,11 @@
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/flexslider.css">
   <link rel="stylesheet" href="./css/billboardCarousel.css">
+  <link rel="stylesheet" href="./css/billboard.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/billboard-paragraph.css">
+  <link rel="stylesheet" href="./css/dealerLocator.css">
 </head>
 
 <body>
@@ -213,7 +216,7 @@
             </picture>
           </div>
           <div class="billboard-paragraph">
-            <div class="desktop">
+            <div class="desktop" style="top:30px;left:60px;">
               <h2 class="white"><strong>EcoBoost 芯动力玩咖竞选</strong></h2>
               <h2 class="white">炫酷开启</h2>
               <p><button type="button">立即参与</button></p>
@@ -232,7 +235,7 @@
             </picture>
           </div>
           <div class="billboard-paragraph">
-            <div class="desktop">
+            <div class="desktop" style="top:30px;left:60px;">
               <h2 class="white"><strong>探险趁当夏</strong></h2>
               <h2 class="white">现购车即享最高15000元置换补贴<br />及2年0利率优惠</h2>
               <p><button type="button">了解更多</button></p>
@@ -251,7 +254,7 @@
             </picture>
           </div>
           <div class="billboard-paragraph">
-            <div class="desktop">
+            <div class="desktop" style="top:30px;left:60px;">
               <h2 class="white">撼心之旅 直通阿拉善英雄会</h2>
               <p><button type="button">了解更多</button></p>
             </div>
@@ -269,7 +272,7 @@
             </picture>
           </div>
           <div class="billboard-paragraph">
-            <div class="desktop">
+            <div class="desktop" style="top:30px;left:60px;">
               <h2 class="white"><strong>福特派车主应用</strong></h2>
               <h2 class="white">智能随行 自在随心</h2>
               <p><button type="button">即刻体验</button></p>
@@ -285,11 +288,95 @@
     <div class="carousel-controls"></div>
   </div>
 
-  <div class="billboard"></div>
+  <div class="billboard">
+    <div class="billboard-image">
+      <picture>
+        <source srcset="./img/billboard1.jpeg" media="(min-width: 1200px)">
+        <source srcset="./img/billboard1.jpeg" media="(min-width: 992px)">
+        <source srcset="./img/billboard1.jpeg" media="(min-width: 768px)">
+        <source srcset="./img/billboard1small.jpeg" media="(min-width: 480px)">
+        <source srcset="./img/billboard1small.jpeg" media="(min-width: 0px)">
+        <img src="./img/billboard1.jpeg">
+      </picture>
+    </div>
+    <div class="billboard-paragraph">
+      <div class="desktop" style="top:66px">
+        <h2 class="grey center">总有一款福特，契合您的生活</h2>
+        <p class="grey center">鉴赏全系车型，发现您的至爱</p>
+        <p class="center"><button type="button">全系车型</button></p>
+      </div>
+    </div>
+  </div>
 
-  <div class="billboard"></div>
+  <div class="billboard">
+    <div class="billboard-image">
+      <picture>
+        <source srcset="img/billboard2.jpg" media="(min-width: 1200px)">
+        <source srcset="img/billboard2.jpg" media="(min-width: 992px)">
+        <source srcset="img/billboard2.jpg" media="(min-width: 768px)">
+        <source srcset="img/billboard2small.jpeg" media="(min-width: 480px)">
+        <source srcset="img/billboard2small.jpeg" media="(min-width: 0px)">
+        <img src="img/billboard2.jpg">
+      </picture>
+    </div>
+    <div class="billboard-paragraph">
+      <div class="desktop pos-middle">
+        <h2 class="white center" style="font-size:30px;">特别优惠，强劲来袭</h2>
+        <p class="center"><button type="button">查看最新优惠</button></p>
+      </div>
+      <div class="mobile pos-middle">
+          <h2 class="white center" style="font-size:22px;">特别优惠，强劲来袭</h2>
+          <p class="center"><a href="#">查看最新优惠<i class="fa fa-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </div>
 
-  <div class="miniDealerLocatorChina"></div>
+  <div class="miniDealerLocatorChina">
+    <div class="icon-holder">
+      <i class="fa fa-map-marker"></i>
+    </div>
+    <div class="search-title-box">
+      <h3>搜寻经销商</h3>
+      <div class="search-text">
+        <p>*位置不能为空</p>
+      </div>
+    </div>
+    <div class="form-holder">
+      <form action="#">
+        <div class="select-holder">
+          <div class="wrap title-wrap">
+            <div class="form-dropdown form-left" id="formLeft">
+              <div class="dropdown-title province-title" id="provinceTitle">
+                <span id="leftTitle" class="left-title">选择一个省市*</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="form-dropdown form-right" id="formRight">
+              <div class="dropdown-title city-title" id="cityTitle">
+                <span id="rightTitle" class="right-title">选择一个地区*</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="wrap list-wrap">
+            <div class="form-dropdown left-list" id="leftList">
+              <div class="dropdown-title province-list" id="provinceList">
+                <ul id="province" class="province"></ul>
+              </div>
+            </div>
+            <div class="form-dropdown right-list" id="rightList">
+              <div class="dropdown-title city-list" id="cityList">
+                <ul id="city" class="city"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-holder">
+          <button type="button">搜寻</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <div class="brand-gallery"></div>
 
@@ -301,6 +388,7 @@
   <script src="./js/jquery.flexslider-min.js"></script>
   <script src="./js/billboardCarousel.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./js/dealerLocator.js"></script>
 </body>
 
 </html>

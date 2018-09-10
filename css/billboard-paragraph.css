@@ -1,0 +1,83 @@
+.billboard-paragraph {
+  width: 100%;
+}
+
+.billboard-paragraph .desktop{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pos-middle {
+  position: absolute;
+  left: 50%!important;
+  top: 50%!important;
+  transform: translate(-50%,-50%);
+}
+
+@media (min-width: 768px) {
+  .billboard-paragraph .desktop {
+		display: block;
+	}
+	.billboard-paragraph .mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.billboard-paragraph .desktop {
+		display: none;
+	}
+	.billboard-paragraph .mobile {
+		display: block;
+	}
+}
+
+.billboard-paragraph .desktop h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.billboard-paragraph .desktop p {
+  margin: 20px 0;
+}
+
+.billboard-paragraph .desktop button {
+  width: 250px;
+  height: 48px;
+  line-height: 46px;
+  margin-top: 4px;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.billboard-paragraph .mobile a {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.billboard-paragraph .mobile h2{
+  font-weight: 200;
+}
+
+.billboard-paragraph .mobile i{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  width: 22px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.billboard-paragraph .mobile a:hover i {
+  background: white;
+  color: transparent;
+}
+
+.fa-chevron-right::before {
+  color: inherit;
+}

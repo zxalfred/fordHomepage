@@ -1,0 +1,457 @@
+.miniDealerLocatorChina {
+  width: 100%;
+  height: 330px;
+  background: #f3f3f3;
+  position: relative;
+  margin-top: -4px;
+  padding: 70px 0;
+  overflow: visible;
+}
+
+.miniDealerLocatorChina .icon-holder {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13.5%;
+  text-align: center;
+}
+
+.miniDealerLocatorChina .icon-holder i {
+  color: #2d96cd;
+  font-size: 32px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #2d96cd;
+  border-radius: 50%;
+}
+
+.miniDealerLocatorChina .search-title-box {
+  position: absolute;
+  top: 27.5%;
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+}
+
+.search-title-box h3 {
+  font-weight: 200;
+  font-size: 2.0625rem;
+  color: #616161;
+}
+
+.search-text {
+  margin-top: 11px;
+  font-size: 16px;
+}
+
+.form-holder {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  top: 51.5%;
+}
+
+.title-wrap {
+  position: relative;
+  height: 46px !important;
+  display: inline-flex;
+}
+
+.list-wrap {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  height: 220px;
+}
+
+.select-holder {
+  min-height: 82px;
+}
+
+.form-dropdown {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 245px;
+  min-width: 245px;
+  min-width: 15.3125rem;
+  width: auto;
+  max-width: inherit;
+}
+
+.dropdown-title {
+  position: absolute;
+  height: 44px;
+  background-color: #fff;
+  color: #616161;
+  cursor: pointer;
+}
+
+.dropdown-title i {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  font-size: 32px;
+  color: #2d96cd;
+}
+
+.dropdown-title span {
+  color: #3b3b3b;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: .875rem;
+  font-weight: 200;
+}
+
+.dropdown-title ul li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.dropdown-title ul li:hover {
+  background-color: #2D96CD;
+}
+
+.dropdown-title ul li:hover span {
+  color: white;
+}
+
+.form-dropdown .dropdown-title .active {
+  color: rgb(45, 150, 205) !important;
+}
+
+.left-title {
+  position: absolute;
+  bottom: 12px;
+}
+
+.city-title .right-title {
+  position: absolute;
+  bottom: 12px;
+  color: RGBA(169, 169, 169, 0.5);
+}
+
+.left-list {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100%);
+  top: 0%;
+}
+
+.right-list {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+}
+
+.province-title {
+  position: relative;
+  border: 1px solid RGB(169, 169, 169);
+  margin-bottom: 35px;
+}
+
+.city-title {
+  position: relative;
+  border: 1px solid RGBA(169, 169, 169, 0.5);
+  margin-bottom: 35px;
+}
+
+.province-list {
+  height: 210px !important;
+  width: 243px;
+  border: 1px solid rgb(169, 169, 169);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.city-list {
+  height: auto !important;
+  max-height: 210px !important;
+  width: 243px;
+  border: 1px solid RGB(169, 169, 169);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.province {
+  list-style: none;
+  height: 203px;
+  overflow: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 3px;
+  margin-left: 4px;
+}
+
+.city {
+  list-style: none;
+  height: auto;
+  max-height: 203px;
+  overflow: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 3px;
+  margin-left: 4px;
+}
+
+.btn-holder button {
+  font-weight: 300;
+  width: auto;
+  max-width: 207px;
+  max-width: 12.9375rem;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  min-width: 245px;
+  min-width: 15.3125rem;
+  background-color: #2d96cd;
+  border: 0;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+
+.btn-holder button:hover {
+  background-color: #007095
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .miniDealerLocatorChina {
+    padding: 50px 0 !important;
+    padding: 3.125rem 0 !important;
+    height: 327px !important;
+  }
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .form-holder {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    top: 54%;
+  }
+}
+
+@media only screen and (max-width: 61.9375em) {
+  .form-dropdown {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    min-width: 207px !important;
+    min-width: 12.9375rem !important;
+    width: auto;
+    max-width: inherit;
+  }
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .form-dropdown {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    min-width: 220px;
+    min-width: 13.75rem;
+    width: auto;
+    max-width: inherit;
+  }
+  .list-wrap .left-list {
+    display: none;
+  }
+  .list-wrap .right-list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 61.9375em) {
+  .province-list {
+    width: 205px !important;
+  }
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .province-list {
+    width: 218px;
+  }
+}
+
+@media only screen and (max-width: 61.9375em) {
+  .city-list {
+    width: 205px !important;
+  }
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .city-list {
+    width: 218px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .miniDealerLocatorChina {
+    padding: 50px 0 !important;
+    padding: 3.125rem 0 !important;
+    height: 340px !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .holder {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .holder i {
+    border: 1px solid #2d96cd;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .search-title-box {
+    position: absolute;
+    top: 26.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .form-holder {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    top: 51.2%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .title-wrap {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .form-left {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .form-right {
+    position: absolute;
+    top: 136%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .select-holder {
+    min-height: 125px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .dropdown-title {
+    position: absolute;
+    height: 45px;
+    width: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .btn-holder button {
+    width: 96%;
+    max-width: inherit;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 46px;
+    line-height: 2.875rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .dropdown-title span {
+    font-size: 12px;
+    font-size: .75rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .dropdown-title ul li span {
+    font-size: 14px !important;
+    font-size: .875rem !important;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .list-wrap {
+    width: 100%;
+    height: 212px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .left-list {
+    display: none;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 100%;
+    z-index: 201;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .province-list {
+    width: 96% !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .right-list {
+    display: none;
+    position: relative;
+    left: 100%;
+    top: 30%;
+    width: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .city-list {
+    width: 96% !important;
+  }
+}

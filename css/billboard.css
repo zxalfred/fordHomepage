@@ -1,0 +1,9 @@
+.billboard {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.billboard .billboard-image img{
+  width: 100%;
+}

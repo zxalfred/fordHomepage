@@ -32,6 +32,9 @@ a:hover {
 li.active a {
   color: #1b394e;
 }
+.center {
+  text-align: center;
+}
 .white {
 	color: #fff;
 }

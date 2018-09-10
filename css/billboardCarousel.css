@@ -71,29 +71,3 @@
   background: rgba(0,0,0.5);
   color: white;
 }
-
-.billboardCarousel .billboard-paragraph {
-  width: 100%;
-}
-
-.billboardCarousel .billboard-paragraph .desktop {
-  position: absolute;
-  top: 30px;
-  left: 60px;
-}
-
-.billboardCarousel .billboard-paragraph .desktop h2 {
-  font-size: 40px;
-  font-weight: 200;
-  margin-bottom: 8px;
-}
-
-.billboardCarousel .billboard-paragraph .desktop button {
-  box-sizing: border-box;
-  width: 250px;
-  height: 48px;
-  line-height: 46px;
-  margin-top: 4px;
-  margin-left: 4px;
-  font-size: 18px;
-}

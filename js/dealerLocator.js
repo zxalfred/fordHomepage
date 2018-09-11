@@ -2,7 +2,7 @@
 // Author: Alfred
 // 2018-09-08
 {
-  var locationData;
+  let locationData;
 
   function fillSelect(data, type) {
     for (i = 0; i < data.length; i++) {
@@ -46,9 +46,6 @@
       $("#leftTitle").removeClass('active');
       $("#provinceTitle").css("border", "1px solid RGB(169,169,169)");
       if ($("#rightTitle").prop('class').indexOf('active') !== -1) {
-        var divTopR = $("#cityList").offset().top;
-        var viewTopR = $(window).scrollTop();
-        var height2 = divTopR - viewTopR;
         if (window.innerWidth <= 767) {
           $('#rightList').css('top', '30%');
         } else {
@@ -68,13 +65,12 @@
 
   $(document).click(function (e) {
     if ($(e.target).parent().prop('id') === "city") {
-      var cityName = $(e.target).children().text();
-      $("#rightTitle").text(cityName);
+      $("#rightTitle").text($(e.target).children().text());
     }
     if ($(e.target).parent().prop('id') === "province") {
-      var provinceIndex = $(e.target).attr('data-index');
-      var provinceName = locationData[provinceIndex].provinceValue;
-      var cityResult = locationData[provinceIndex].cityList;
+      const provinceIndex = $(e.target).attr('data-index');
+      const provinceName = locationData[provinceIndex].provinceValue;
+      const cityResult = locationData[provinceIndex].cityList;
       $("#city").html('');
       $('#rightTitle').text('选择一个地区*');
       fillSelect(cityResult, 'city');
@@ -103,9 +99,9 @@
 
   // 控制下拉列表弹出方向
   $(window).scroll(function () {
-    var divTopleft = $("#provinceList").offset().top;
-    var viewTopleft = $(window).scrollTop();
-    var height = divTopleft - viewTopleft;
+    let divTopleft = $("#provinceList").offset().top;
+    let viewTopleft = $(window).scrollTop();
+    let height = divTopleft - viewTopleft;
     if (height < 0) {
       $('#leftList').css('top', '0%');
       $("#provinceTitle").css("border-top", "1px solid RGB(169,169,169)");
@@ -123,9 +119,9 @@
       $("#provinceList").css("box-shadow", "0px 4px 4px rgba(0, 0, 0, 0)");
       $("#provinceList").css("box-shadow", "0 -4px 4px rgba(0,0,0,0.15)");
     }
-    var divTopR = $("#cityList").offset().top;
-    var viewTopR = $(window).scrollTop();
-    var height2 = divTopR - viewTopR;
+    const divTopR = $("#cityList").offset().top;
+    const viewTopR = $(window).scrollTop();
+    const height2 = divTopR - viewTopR;
     if (height2 < 0) {
       if (window.innerWidth <= 767) {
         $('#rightList').css('top', '30%');
@@ -141,10 +137,10 @@
 
     if (height2 + $("#cityList")[0].offsetHeight >= $(window).height()) {
       if (window.innerWidth <= 767) {
-        var top = $("#cityList").height() - 17;
+        const top = $("#cityList").height() - 17;
         $('#rightList').css("top", -top + 'px');
       } else {
-        var top = $("#cityList").height() + 45;
+        const top = $("#cityList").height() + 45;
         $('#rightList').css('top', -top + 'px');
       }
       $("#cityTitle").css("border-bottom", "1px solid RGB(169,169,169)");

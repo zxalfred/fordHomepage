@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./css/billboard.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/billboard-paragraph.css">
   <link rel="stylesheet" href="./css/dealerLocator.css">
   <link rel="stylesheet" href="./css/brandGallery.css">
 </head>
@@ -22,6 +21,7 @@
   <div class="main-nav">
     <div class="nav-wrapper"></div>
     <div class="nav-header">
+      <a href="#" class="mobile-nav-button"><i class="fa fa-reorder"></i></a>
       <a href="#" class="logoImgLink">
       </a>
       <div class="nav-list">
@@ -33,6 +33,7 @@
           <li><a>福特文化</a></li>
           <li><a>新闻中心</a></li>
         </ul>
+        <a class="small-locate-icon"><i class="fa fa-map-marker"></i></a>
         <ul class="sec-nav-list">
           <li><a><i class="fa fa-map-marker"></i>经销商查询及招募</a></li>
           <li><a>预约试驾</a></li>
@@ -326,8 +327,8 @@
         <p class="center"><button type="button">查看最新优惠</button></p>
       </div>
       <div class="mobile pos-middle">
-          <h2 class="white center" style="font-size:22px;">特别优惠，强劲来袭</h2>
-          <p class="center"><a href="#">查看最新优惠<i class="fa fa-chevron-right"></i></a></p>
+        <h2 class="white center" style="font-size:22px;">特别优惠，强劲来袭</h2>
+        <p class="center"><a href="#">查看最新优惠<i class="fa fa-chevron-right"></i></a></p>
       </div>
     </div>
   </div>
@@ -469,10 +470,35 @@
         </div>
       </div>
     </div>
-    <button>了解更多<i></i></button>
+    <button>了解更多 <i class="fa fa-plus"></i></button>
   </div>
 
-  <div class="billboard"></div>
+  <div class="billboard billboard-bottom">
+    <div class="billboard-image">
+      <picture>
+        <source srcset="img/billboard3.jpg" media="(min-width: 1200px)">
+        <source srcset="img/billboard3.jpg" media="(min-width: 992px)">
+        <source srcset="img/billboard3.jpg" media="(min-width: 768px)">
+        <source srcset="img/billboard3small.jpeg" media="(min-width: 480px)">
+        <source srcset="img/billboard3small.jpeg" media="(min-width: 0px)">
+        <img src="img/billboard3.jpg">
+      </picture>
+    </div>
+    <div class="billboard-paragraph">
+      <div class="desktop pos-middle">
+        <h2 class="white" style="font-size:44px;"><strong>福特派</strong></h2>
+        <h2 class="white" style="font-size:44px;">智能随行 自在随心</h2>
+        <p class="white" style="font-size:17px;">通过一站式出行应用工具福特派，您将更便捷地驾驭福特。轻松实现爱车售后服务，获得车主道路救援等各种尽善尽美的解决方案，让每一次出行倍感轻松愉悦。</p>
+        <p><button type="button">下载福特派</button></p>
+      </div>
+      <div class="mobile">
+        <h2 class="white center" style="font-size:38px;"><strong>福特派</strong></h2>
+        <h2 class="white center" style="font-size:38px;">智能随行 自在随心</h2>
+        <p class="white center" style="font-size:14px;">通过一站式出行应用工具福特派，您将更便捷地驾驭福特。轻松实现爱车售后服务，获得车主道路救援等各种尽善尽美的解决方案，让每一次出行倍感轻松愉悦。</p>
+        <p class="center"><a href="#">下载福特派<i class="fa fa-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </div>
 
   <div class="footer"></div>
 

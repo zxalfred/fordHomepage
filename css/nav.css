@@ -23,6 +23,11 @@
   background: #fff;
 }
 
+.mobile-nav-button {
+  display: none;
+  font-size: 30px;
+}
+
 .logoImgLink {
   display: inline-block;
   overflow: hidden;
@@ -52,6 +57,11 @@
 .main-nav-list li {
   font-weight: 700;
   font-size: 16px;
+}
+
+.small-locate-icon {
+  display: none;
+  font-size: 1.6rem;
 }
 
 .sec-nav-list li {
@@ -145,3 +155,42 @@
   margin: 25px 10px;
   font-size: 15px;
 }
+
+@media screen and (max-width: 1100px) {
+  .nav-header {
+    height: 80px;
+  }
+  
+  .logoImgLink {
+    width: 90px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-list ul.sec-nav-list {
+    display: none;
+  }
+
+  .small-locate-icon {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-header {
+    height: 76px;
+    padding: 0;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-header .logoImgLink{
+    margin: auto;
+  }
+  .mobile-nav-button {
+    display: inline-block;
+    margin-left: 25px;
+    position: absolute;
+  }
+} 

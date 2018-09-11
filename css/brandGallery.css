@@ -78,6 +78,8 @@
   .brand-gallery {
     max-height: 960px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .row-first .brand-right {
@@ -87,13 +89,14 @@
   .row-first {
     display: flex;
     overflow: hidden;
-    height: 33.3333%;
+    flex: 1;
   }
   
   .row-second {
     height: 66.6666%;
     display: flex;
     overflow: hidden;
+    flex: 2;
   }
   
   .row-second .brand-right {

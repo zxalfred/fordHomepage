@@ -29,6 +29,9 @@ a {
 a:hover {
   color: #1b394e;
 }
+a:visited {
+  color: #008cba;
+}
 li.active a {
   color: #1b394e;
 }

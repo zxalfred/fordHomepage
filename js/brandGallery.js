@@ -6,7 +6,7 @@
 
   let isAllShow = false;
 
-  $(window).scroll((event) => {
+  $(window).resize((event) => {
     if (window.innerWidth < 768) {
       $('.brand-gallery .gallery-holder').each((index, element) => {
         if (index < 3) {

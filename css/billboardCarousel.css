@@ -12,6 +12,14 @@
   position: relative;
 }
 
+.billboardCarousel .billboard-paragraph .mobile h2 {
+  margin-bottom: 8px;
+}
+
+.billboardCarousel .billboard-paragraph .mobile i {
+  position: absolute;
+}
+
 .billboardCarousel .carousel-controls .flex-control-nav{
   bottom: 20px;
 }

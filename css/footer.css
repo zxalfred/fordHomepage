@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-search {
+  width: 100%;
+  border-top: 77px solid #2a2a2a;
+  border-bottom: 50px solid #1b394e;
+}
+
+.footer-bottom {
+  background: white;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-bottom ul li{
+  display: inline-block;
+  color: #868686;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 1em;
+  line-height: 20px;
+}
+
+.footer-bottom ul li a {
+  color: #868686;
+}

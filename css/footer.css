@@ -87,16 +87,8 @@
   font-size: 20px;
 }
 
-.search-sum .search-title i.fa-angle-up {
-  display: none;
-}
-
 .search-sum-middle li.active i.fa-angle-down {
-  display: none;
-}
-
-.search-sum-middle li.active i.fa-angle-up {
-  display: inline-block;
+  transform: rotate(180deg);
 }
 
 .search-sum-middle li ul li {

@@ -7,6 +7,38 @@
   width: 100%;
   border-top: 77px solid #2a2a2a;
   border-bottom: 50px solid #1b394e;
+  padding: 25px;
+  background: #252525;
+  box-sizing: border-box;
+}
+
+.footer-search .search-sum {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8.3333333333%;
+  padding-right: 20%;
+}
+
+.footer-search .search-sum .search-title {
+  line-height: 17px;
+  padding: 20px 0;
+  color: #dfdfdf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-search .search-sum ul li {
+  display: block;
+  padding-bottom: 5px;
+  line-height: 25px;
+}
+
+.footer-search .search-sum ul li a {
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .footer-bottom {
